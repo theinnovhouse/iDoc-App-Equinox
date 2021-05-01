@@ -27,16 +27,23 @@ class SignInViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         defaults.object(forKey: "userId")
+        nameTextField.layer.cornerRadius = 20
+        phoneTf.layer.cornerRadius = 20
+        emailTf.layer.cornerRadius = 20
+        cityTf.layer.cornerRadius = 20
+        passwordTf.layer.cornerRadius = 20
+        confirmPass.layer.cornerRadius = 20
+        
         // Do any additional setup after loading the view.
     }
     @IBAction func signUpTapped(_ sender: Any) {
         checkField()
     }
+
     
-    @IBAction func testBtn(_ sender: Any) {
-        defaults.removeObject(forKey: "userId")
+    @IBAction func backButton(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
-    
 }
 
 

@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var locationLabel: UILabel!
     
     let defaults = UserDefaults.standard
-    
+    let customColor:UIColor = #colorLiteral(red: 1, green: 0.4874575138, blue: 0, alpha: 1)
     static var name:Any = ""
     static var city:Any = ""
     static var phone:Any = ""
@@ -41,8 +41,6 @@ class ViewController: UIViewController {
         emergencyBtn.layer.cornerRadius = 10
         //defaults.removeObject(forKey: "userId")
         profileImage.layer.cornerRadius = 5
-        
-        Loaf.GradientLoaf(Message: "Welcome to Doctor Bot", Position: .bottom, LoafWidth: 250, LoafHeight: 50, CornerRadius: 20, FontStyle: "Avenir-Medium", FontSize: 16, BGColor1: .systemIndigo, BGColor2: .systemOrange, FontColor: .black, LoafImage: nil, AnimationDirection: .Bottom, Duration: 5, LoafjetView: view)
         
         fetchUserData()
     }
@@ -100,6 +98,8 @@ class ViewController: UIViewController {
                 
                 self.locationLabel.text = "\(ViewController.city), India"
                 self.wishLabel.text = "Good Morning, \(ViewController.name)"
+                
+                Loaf.GradientLoaf(Message: "Welcome \(ViewController.name)", Position: .bottom, LoafWidth: 280, LoafHeight: 44, CornerRadius: 20, FontStyle: "Avenir-Medium", FontSize: 17, BGColor1: .link.withAlphaComponent(0.5), BGColor2: self.customColor.withAlphaComponent(1), FontColor: .black, LoafImage: nil, AnimationDirection: .Bottom, Duration: 2, LoafjetView: self.view)
             }
             
             
