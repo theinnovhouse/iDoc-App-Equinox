@@ -15,9 +15,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var pillBtn: UIButton!
     @IBOutlet weak var doctorBtn: UIButton!
     @IBOutlet weak var hospitalizeBtn: UIButton!
-    @IBOutlet weak var reportButton: UIButton!
     @IBOutlet weak var emergencyBtn: UIButton!
     @IBOutlet weak var profileImage: UIImageView!
+    @IBOutlet weak var wishLabel: UILabel!
+    @IBOutlet weak var locationLabel: UILabel!
     
     let defaults = UserDefaults.standard
     
@@ -36,7 +37,7 @@ class ViewController: UIViewController {
         pillBtn.layer.cornerRadius = 10
         doctorBtn.layer.cornerRadius = 10
         hospitalizeBtn.layer.cornerRadius = 10
-       
+        
         emergencyBtn.layer.cornerRadius = 10
         //defaults.removeObject(forKey: "userId")
         profileImage.layer.cornerRadius = 5
@@ -45,9 +46,17 @@ class ViewController: UIViewController {
         
         fetchUserData()
     }
-//    @IBAction func test(_ sender: Any) {
-//        defaults.removeObject(forKey: "userId")
-//    }
+        @IBAction func logOut(_ sender: Any) {
+            let alert = UIAlertController(title: "LogOut", message: "Are you sure?", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "LogOut", style: .destructive, handler: { _ in
+                DispatchQueue.main.async {
+                    self.defaults.removeObject(forKey: "userId")
+                    self.dismiss(animated: true, completion: nil)
+                }
+            }))
+            alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
+            present(alert, animated: true, completion: nil)
+        }
     
     @IBAction func diagnoseButton(_ sender: Any) {
         self.performSegue(withIdentifier: "diagnose", sender: nil)
@@ -56,9 +65,9 @@ class ViewController: UIViewController {
         self.performSegue(withIdentifier: "medicine", sender: nil)
     }
     
-//    @IBAction func historyBtn(_ sender: Any) {
-//        self.performSegue(withIdentifier: "report", sender: nil)
-//    }
+    //    @IBAction func historyBtn(_ sender: Any) {
+    //        self.performSegue(withIdentifier: "report", sender: nil)
+    //    }
     @IBAction func reportButton(_ sender: Any) {
         self.performSegue(withIdentifier: "reportss", sender: nil)
     }
@@ -76,7 +85,7 @@ class ViewController: UIViewController {
         
         ref.observeSingleEvent(of: .value, with: { (snap : DataSnapshot)  in
             DispatchQueue.main.async {
-               
+                
                 let city =  snap.childSnapshot(forPath: "city").value
                 let name = snap.childSnapshot(forPath: "name").value
                 let phone = snap.childSnapshot(forPath: "phone").value
@@ -88,6 +97,9 @@ class ViewController: UIViewController {
                 ViewController.phone = phone!
                 
                 print(ViewController.city)
+                
+                self.locationLabel.text = "\(ViewController.city), India"
+                self.wishLabel.text = "Good Morning, \(ViewController.name)"
             }
             
             

@@ -16,40 +16,13 @@ class DoctorViewController: UIViewController {
     var docTime:[String] = ["10:00 - 19:00","11:00 - 20:00","10:00 - 15:00","09:00 - 16:00","10:00 - 18:00","10:00 - 19:00","08:00 - 15:00"]
     
     
-    @IBOutlet weak var view1: UIView!
-    @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var uti1: UIImageView!
-    @IBOutlet weak var uti2: UIImageView!
-    @IBOutlet weak var uti3: UIImageView!
-    @IBOutlet weak var uti4: UIImageView!
-    
-    @IBOutlet weak var shadowView1: UIView!
-    @IBOutlet weak var shadowView2: UIView!
-    @IBOutlet weak var shadowView3: UIView!
-    @IBOutlet weak var shadowView4: UIView!
+    @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view1.layer.cornerRadius = 30
-        tableView.dataSource = self
-        tableView.delegate = self
-        
-        uti1.layer.cornerRadius = 20
-        uti2.layer.cornerRadius = 20
-        uti3.layer.cornerRadius = 20
-        uti4.layer.cornerRadius = 20
-        
-        shadowView1.layer.cornerRadius = 20
-        shadowView2.layer.cornerRadius = 20
-        shadowView3.layer.cornerRadius = 20
-        shadowView4.layer.cornerRadius = 20
-        
-        imageEffect(MyView: shadowView1)
-        imageEffect(MyView: shadowView2)
-        imageEffect(MyView: shadowView3)
-        imageEffect(MyView: shadowView4)
-        
+        collectionView.delegate = self
+        collectionView.dataSource = self
     }
     
     @IBAction func backBtn(_ sender: Any) {
@@ -66,36 +39,25 @@ class DoctorViewController: UIViewController {
     
 }
 
-extension DoctorViewController: UITableViewDelegate, UITableViewDataSource{
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return docImage.count
+extension DoctorViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return doctorName.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! DoctorTableViewCell
-        
-        cell.docImage.image = docImage[indexPath.row]
-        cell.name.text = doctorName[indexPath.row]
-        cell.rate.text = ratings[indexPath.row]
-        cell.special.text = specialist[indexPath.row]
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cells", for: indexPath) as! DoctorCollectionViewCell
+        cell.doctorName.text = doctorName[indexPath.row]
+        cell.stars.text = "⭐️ \(ratings[indexPath.row])"
+        cell.speciality.text = specialist[indexPath.row]
         cell.time.text = docTime[indexPath.row]
-        
-        cell.layer.cornerRadius = 30
-        //cell.layer.cornerRadius = 8
-        cell.layer.shadowOffset = CGSize(width: 0, height: 3)
-        cell.layer.shadowRadius = 3
-        cell.layer.shadowOpacity = 0.3
-        cell.layer.shadowColor = UIColor.black.cgColor
-        cell.layer.shadowPath = UIBezierPath(roundedRect: cell.bounds,
-        byRoundingCorners: .allCorners, cornerRadii: CGSize(width: 8, height: 8)).cgPath
-        cell.layer.shouldRasterize = true
-        cell.layer.rasterizationScale = UIScreen.main.scale
-        
         return cell
     }
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 130
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let width = (view.frame.width-40)/2
+        let height = width*(200/140)
+        let cellSize = CGSize(width: width, height: height)
+        return cellSize
     }
+    
+    
 }
-

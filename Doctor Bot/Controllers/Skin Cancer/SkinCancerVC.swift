@@ -38,6 +38,9 @@ class SkinCancerVC: UIViewController {
     @IBAction func addImageBtn(_ sender: Any) {
         imageSelectionMode()
     }
+    @IBAction func uploadButton(_ sender: Any) {
+        imageSelectionMode()
+    }
     
 }
 

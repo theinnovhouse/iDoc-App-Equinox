@@ -26,6 +26,9 @@ class NailDiagnoseVC: UIViewController {
         nailImageData.image = UIImage(named: "naildiag")
     }
     
+    @IBAction func uploadBtn(_ sender: Any) {
+        imageSelectionMode()
+    }
     @IBAction func closeBtn(_ sender: Any) {
         self.navigationController?.popToRootViewController(animated: true)
     }
