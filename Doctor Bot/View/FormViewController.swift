@@ -11,7 +11,7 @@ class FormViewController: UIViewController {
     
     var report:Report?
     var update = false
-
+    
     @IBOutlet weak var deleteBtn:UIButton!
     @IBOutlet weak var addBtn:UIButton!
     
@@ -19,9 +19,18 @@ class FormViewController: UIViewController {
     @IBOutlet weak var doctorNameField: UITextField!
     @IBOutlet weak var medicineField: UITextField!
     @IBOutlet weak var bloodTextField: UITextField!
+    @IBOutlet weak var weightTf: UITextField!
+    @IBOutlet weak var heighttf: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        issueField.layer.cornerRadius = 20
+        doctorNameField.layer.cornerRadius = 20
+        medicineField.layer.cornerRadius = 20
+        bloodTextField.layer.cornerRadius = 20
+        weightTf.layer.cornerRadius = 20
+        heighttf.layer.cornerRadius = 20
+        
         if update == true {
             issueField.text = report!.issue
             doctorNameField.text = report!.doctor
@@ -30,7 +39,7 @@ class FormViewController: UIViewController {
     }
     
     @IBAction func backButton(_ sender: Any){
-        self.navigationController?.popToRootViewController(animated: true)
+        self.dismiss(animated: true, completion: nil)
     }
     @IBAction func deleteButton(_ sender: Any){
         
@@ -60,7 +69,7 @@ class FormViewController: UIViewController {
             present(alert, animated: true, completion: nil)
             
         }
-        self.navigationController?.popToRootViewController(animated: true)
+        self.dismiss(animated: true, completion: nil)
         
     }
     
