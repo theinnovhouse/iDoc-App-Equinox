@@ -26,6 +26,9 @@ class COVIDDiagnoseVC: UIViewController {
         view1.layer.cornerRadius = 20
     }
     
+    @IBAction func uploadBtn(_ sender: Any) {
+        imageSelectionMode()
+    }
     @IBAction func closeBtn(_ sender: Any) {
         self.navigationController?.popToRootViewController(animated: true)
     }

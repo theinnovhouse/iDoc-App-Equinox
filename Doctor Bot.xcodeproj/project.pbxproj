@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		10BFCFCA1AB0DEC894353924 /* Pods_Doctor_Bot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CBA5E23B26A275C42D2A0D3 /* Pods_Doctor_Bot.framework */; };
 		55100A9425CD20000043765D /* DoctorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55100A9325CD20000043765D /* DoctorViewController.swift */; };
-		55100A9B25CD21DA0043765D /* DoctorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55100A9A25CD21DA0043765D /* DoctorTableViewCell.swift */; };
 		5518A9D325CE7E9B00F305BC /* MedistoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5518A9D225CE7E9B00F305BC /* MedistoreViewController.swift */; };
 		5522F4A525BCB85700CE7BA4 /* DiagnoseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5522F4A425BCB85700CE7BA4 /* DiagnoseViewController.swift */; };
 		5522F4A825BCBB8900CE7BA4 /* COVIDDetector.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 5522F4A725BCBB8900CE7BA4 /* COVIDDetector.mlmodel */; };
@@ -30,6 +29,7 @@
 		5548403A263D3E120066658E /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55484039263D3E120066658E /* LogInViewController.swift */; };
 		555CE2E2263D5770004763E5 /* firebaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555CE2E1263D5770004763E5 /* firebaseModel.swift */; };
 		555CE2E4263D6BA9004763E5 /* firstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555CE2E3263D6BA9004763E5 /* firstViewController.swift */; };
+		555CF970263DC743004A9A2C /* DoctorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555CF96F263DC743004A9A2C /* DoctorCollectionViewCell.swift */; };
 		5593396825BCAC1600443F6A /* skindisease.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 5593396425BCAC1600443F6A /* skindisease.mlmodel */; };
 		5593396925BCAC1600443F6A /* Teath Disease 1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 5593396525BCAC1600443F6A /* Teath Disease 1.mlmodel */; };
 		5593396A25BCAC1600443F6A /* NailDisease.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 5593396625BCAC1600443F6A /* NailDisease.mlmodel */; };
@@ -48,7 +48,6 @@
 
 /* Begin PBXFileReference section */
 		55100A9325CD20000043765D /* DoctorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DoctorViewController.swift; path = "Doctor Bot/View/DoctorViewController.swift"; sourceTree = SOURCE_ROOT; };
-		55100A9A25CD21DA0043765D /* DoctorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorTableViewCell.swift; sourceTree = "<group>"; };
 		5518A9D225CE7E9B00F305BC /* MedistoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MedistoreViewController.swift; path = "Doctor Bot/Controllers/MediStore/MedistoreViewController.swift"; sourceTree = SOURCE_ROOT; };
 		5522F4A425BCB85700CE7BA4 /* DiagnoseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DiagnoseViewController.swift; path = "Doctor Bot/View/DiagnoseViewController.swift"; sourceTree = SOURCE_ROOT; };
 		5522F4A725BCBB8900CE7BA4 /* COVIDDetector.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = COVIDDetector.mlmodel; sourceTree = "<group>"; };
@@ -68,6 +67,7 @@
 		55484039263D3E120066658E /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		555CE2E1263D5770004763E5 /* firebaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firebaseModel.swift; sourceTree = "<group>"; };
 		555CE2E3263D6BA9004763E5 /* firstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstViewController.swift; sourceTree = SOURCE_ROOT; };
+		555CF96F263DC743004A9A2C /* DoctorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DoctorCollectionViewCell.swift; path = "Doctor Bot/View/DoctorCollectionViewCell.swift"; sourceTree = SOURCE_ROOT; };
 		5593396425BCAC1600443F6A /* skindisease.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = skindisease.mlmodel; sourceTree = "<group>"; };
 		5593396525BCAC1600443F6A /* Teath Disease 1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "Teath Disease 1.mlmodel"; sourceTree = "<group>"; };
 		5593396625BCAC1600443F6A /* NailDisease.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = NailDisease.mlmodel; sourceTree = "<group>"; };
@@ -210,10 +210,10 @@
 		5593397225BCAC4600443F6A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				555CF96F263DC743004A9A2C /* DoctorCollectionViewCell.swift */,
 				5548403B263D3E190066658E /* Firebase */,
 				5518A9D525CE7EA000F305BC /* MediStore */,
 				55100A9325CD20000043765D /* DoctorViewController.swift */,
-				55100A9A25CD21DA0043765D /* DoctorTableViewCell.swift */,
 				5537D75A25C50C8C00E9EAF8 /* Reports */,
 				554264B125C3C744004E1C0E /* Medicine Bot */,
 				55452E1325BD43BA006D04B6 /* Report */,
@@ -405,6 +405,7 @@
 				555CE2E4263D6BA9004763E5 /* firstViewController.swift in Sources */,
 				55CC05F325BC9EB200B66E0F /* ViewController.swift in Sources */,
 				55452E0125BD3609006D04B6 /* NegativeViewController.swift in Sources */,
+				555CF970263DC743004A9A2C /* DoctorCollectionViewCell.swift in Sources */,
 				559A5F6D25BCC0B0004A3CD0 /* NailDiagnoseVC.swift in Sources */,
 				55100A9425CD20000043765D /* DoctorViewController.swift in Sources */,
 				55CF81B525C531DA00EBF1E0 /* FormViewController.swift in Sources */,
@@ -426,7 +427,6 @@
 				559A5F6A25BCC08D004A3CD0 /* COVIDDiagnoseVC.swift in Sources */,
 				5522F4A825BCBB8900CE7BA4 /* COVIDDetector.mlmodel in Sources */,
 				559A5F7025BCC36F004A3CD0 /* SkinCancerVC.swift in Sources */,
-				55100A9B25CD21DA0043765D /* DoctorTableViewCell.swift in Sources */,
 				5537D76225C50E5800E9EAF8 /* ReportViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
