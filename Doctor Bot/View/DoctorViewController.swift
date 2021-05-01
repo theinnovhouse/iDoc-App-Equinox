@@ -12,7 +12,6 @@ class DoctorViewController: UIViewController {
     var doctorName:[String] = ["Dr. Haider Ali","Dr. George Abraham","Dr. Ekta Sharma","Dr. Jiya Kapoor","Dr. Rohan Patel","Dr. Reshma Gandhi","Dr. David Lezo"]
     var ratings:[String] = ["5.0","4.6","4.9","5.0","4.8","4.5","5.0"]
     var specialist:[String] = ["Cardiologists","Rectal Surgeons","Anesthesiologists","Endocrinologists","Gastroenterologists","Immunologists","Orthopedic"]
-    var docImage:[UIImage] = [#imageLiteral(resourceName: "doct7"),#imageLiteral(resourceName: "doct5"),#imageLiteral(resourceName: "doct6"),#imageLiteral(resourceName: "doct4"),#imageLiteral(resourceName: "doc"),#imageLiteral(resourceName: "doct3"),#imageLiteral(resourceName: "doct1")]
     var docTime:[String] = ["10:00 - 19:00","11:00 - 20:00","10:00 - 15:00","09:00 - 16:00","10:00 - 18:00","10:00 - 19:00","08:00 - 15:00"]
     
     
