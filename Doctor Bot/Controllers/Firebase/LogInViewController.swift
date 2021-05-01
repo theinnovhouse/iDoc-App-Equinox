@@ -6,26 +6,26 @@
 //
 
 import UIKit
+import Loafjet
 import FirebaseAuth
 
 class LogInViewController: UIViewController {
-
+    
     @IBOutlet weak var emailTf: UITextField!
     @IBOutlet weak var passwordTf: UITextField!
     
-   
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        emailTf.layer.cornerRadius = 20
+        passwordTf.layer.cornerRadius = 20
+        checkUserSigned()
     }
     
-
+    
     @IBAction func loginBtn(_ sender: Any) {
         login()
     }
-
+    
 }
 
 extension LogInViewController {
@@ -41,10 +41,12 @@ extension LogInViewController {
                     let id = Auth.auth().currentUser!.uid 
                     UserDefaults.standard.setValue(id, forKey: "userId")
                     //DispatchQueue.main.async {
-                        self.performSegue(withIdentifier: "loginToMain", sender: nil)
-                   // }
+                    self.performSegue(withIdentifier: "loginToMain", sender: nil)
+                    // }
                 }
             }
+        }else{
+            alert(mesg: "Fields are incomplete!")
         }
     }
     
@@ -52,5 +54,21 @@ extension LogInViewController {
         let alert = UIAlertController(title: "Error", message: mesg, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
         present(alert, animated: true, completion: nil)
+    }
+}
+
+//MARK:- Check signin or not
+
+extension LogInViewController {
+    func checkUserSigned() {
+        guard let id = UserDefaults.standard.object(forKey: "userId") as? String else {
+            Loaf.PlainLoaf(Message: "Welcome to iDoc", Position: .top, LoafWidth: 250, LoafHeight: 44, CornerRadius: 20, FontStyle: "Avenir-Medium", FontSize: 17, BGColor: .link.withAlphaComponent(0.4), FontColor: .black, LoafImage: nil, AnimationDirection: .Top, Duration: 2, LoafjetView: self.view)
+            return
+        }
+        if id != "" {
+            DispatchQueue.main.async {
+                self.performSegue(withIdentifier: "loginToMain", sender: nil)
+            }
+        }
     }
 }

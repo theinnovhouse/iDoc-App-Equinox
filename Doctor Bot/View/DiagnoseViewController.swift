@@ -14,7 +14,7 @@ class DiagnoseViewController: UIViewController {
         super.viewDidLoad()
 
         
-        Loaf.GradientLoaf(Message: "Diagnostic Section", Position: .bottom, LoafWidth: 250, LoafHeight: 45, CornerRadius: 20, FontStyle: "Avenir-Medium", FontSize: 17, BGColor1: .systemIndigo, BGColor2: .black, FontColor: .white, LoafImage: nil, AnimationDirection: .Bottom, Duration: 2, LoafjetView: view)
+     //   Loaf.GradientLoaf(Message: "Diagnostic Section", Position: .bottom, LoafWidth: 250, LoafHeight: 45, CornerRadius: 20, FontStyle: "Avenir-Medium", FontSize: 17, BGColor1: .systemIndigo, BGColor2: .black, FontColor: .white, LoafImage: nil, AnimationDirection: .Bottom, Duration: 2, LoafjetView: view)
     }
     
    
