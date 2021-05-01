@@ -1,0 +1,655 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10BFCFCA1AB0DEC894353924 /* Pods_Doctor_Bot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CBA5E23B26A275C42D2A0D3 /* Pods_Doctor_Bot.framework */; };
+		55100A9425CD20000043765D /* DoctorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55100A9325CD20000043765D /* DoctorViewController.swift */; };
+		55100A9B25CD21DA0043765D /* DoctorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55100A9A25CD21DA0043765D /* DoctorTableViewCell.swift */; };
+		5518A9D325CE7E9B00F305BC /* MedistoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5518A9D225CE7E9B00F305BC /* MedistoreViewController.swift */; };
+		5522F4A525BCB85700CE7BA4 /* DiagnoseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5522F4A425BCB85700CE7BA4 /* DiagnoseViewController.swift */; };
+		5522F4A825BCBB8900CE7BA4 /* COVIDDetector.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 5522F4A725BCBB8900CE7BA4 /* COVIDDetector.mlmodel */; };
+		5537D75625C509F200E9EAF8 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 5537D75525C509F200E9EAF8 /* Alamofire */; };
+		5537D76225C50E5800E9EAF8 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5537D76125C50E5800E9EAF8 /* ReportViewController.swift */; };
+		5537D76525C50E6800E9EAF8 /* ReportTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5537D76425C50E6800E9EAF8 /* ReportTableViewCell.swift */; };
+		5537D76825C5102500E9EAF8 /* APIFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5537D76725C5102500E9EAF8 /* APIFunctions.swift */; };
+		554264AF25C3C73D004E1C0E /* MedicineBotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554264AE25C3C73D004E1C0E /* MedicineBotViewController.swift */; };
+		554264B425C3EDB6004E1C0E /* MedicineBot.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 554264B325C3EDB6004E1C0E /* MedicineBot.mlmodel */; };
+		55452DFD25BD35C2006D04B6 /* PositiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55452DFC25BD35C2006D04B6 /* PositiveViewController.swift */; };
+		55452E0125BD3609006D04B6 /* NegativeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55452E0025BD3609006D04B6 /* NegativeViewController.swift */; };
+		55452E0525BD38B8006D04B6 /* benignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55452E0425BD38B8006D04B6 /* benignViewController.swift */; };
+		55452E0925BD38C2006D04B6 /* malignantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55452E0825BD38C2006D04B6 /* malignantViewController.swift */; };
+		55452E0C25BD4171006D04B6 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55452E0B25BD4171006D04B6 /* HistoryViewController.swift */; };
+		55452E1125BD43B5006D04B6 /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55452E1025BD43B5006D04B6 /* HistoryTableViewCell.swift */; };
+		55484036263D3BD10066658E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55484035263D3BD10066658E /* GoogleService-Info.plist */; };
+		55484038263D3E0A0066658E /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55484037263D3E0A0066658E /* SignInViewController.swift */; };
+		5548403A263D3E120066658E /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55484039263D3E120066658E /* LogInViewController.swift */; };
+		555CE2E2263D5770004763E5 /* firebaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555CE2E1263D5770004763E5 /* firebaseModel.swift */; };
+		555CE2E4263D6BA9004763E5 /* firstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555CE2E3263D6BA9004763E5 /* firstViewController.swift */; };
+		5593396825BCAC1600443F6A /* skindisease.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 5593396425BCAC1600443F6A /* skindisease.mlmodel */; };
+		5593396925BCAC1600443F6A /* Teath Disease 1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 5593396525BCAC1600443F6A /* Teath Disease 1.mlmodel */; };
+		5593396A25BCAC1600443F6A /* NailDisease.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 5593396625BCAC1600443F6A /* NailDisease.mlmodel */; };
+		5593396B25BCAC1600443F6A /* skinCancer.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 5593396725BCAC1600443F6A /* skinCancer.mlmodel */; };
+		559A5F6A25BCC08D004A3CD0 /* COVIDDiagnoseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559A5F6925BCC08D004A3CD0 /* COVIDDiagnoseVC.swift */; };
+		559A5F6D25BCC0B0004A3CD0 /* NailDiagnoseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559A5F6C25BCC0B0004A3CD0 /* NailDiagnoseVC.swift */; };
+		559A5F7025BCC36F004A3CD0 /* SkinCancerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559A5F6F25BCC36F004A3CD0 /* SkinCancerVC.swift */; };
+		55CC05EF25BC9EB200B66E0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CC05EE25BC9EB200B66E0F /* AppDelegate.swift */; };
+		55CC05F125BC9EB200B66E0F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CC05F025BC9EB200B66E0F /* SceneDelegate.swift */; };
+		55CC05F325BC9EB200B66E0F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CC05F225BC9EB200B66E0F /* ViewController.swift */; };
+		55CC05F625BC9EB200B66E0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55CC05F425BC9EB200B66E0F /* Main.storyboard */; };
+		55CC05FB25BC9EB300B66E0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55CC05FA25BC9EB300B66E0F /* Assets.xcassets */; };
+		55CC05FE25BC9EB300B66E0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55CC05FC25BC9EB300B66E0F /* LaunchScreen.storyboard */; };
+		55CF81B525C531DA00EBF1E0 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CF81B425C531DA00EBF1E0 /* FormViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		55100A9325CD20000043765D /* DoctorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DoctorViewController.swift; path = "Doctor Bot/View/DoctorViewController.swift"; sourceTree = SOURCE_ROOT; };
+		55100A9A25CD21DA0043765D /* DoctorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorTableViewCell.swift; sourceTree = "<group>"; };
+		5518A9D225CE7E9B00F305BC /* MedistoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MedistoreViewController.swift; path = "Doctor Bot/Controllers/MediStore/MedistoreViewController.swift"; sourceTree = SOURCE_ROOT; };
+		5522F4A425BCB85700CE7BA4 /* DiagnoseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DiagnoseViewController.swift; path = "Doctor Bot/View/DiagnoseViewController.swift"; sourceTree = SOURCE_ROOT; };
+		5522F4A725BCBB8900CE7BA4 /* COVIDDetector.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = COVIDDetector.mlmodel; sourceTree = "<group>"; };
+		5537D76125C50E5800E9EAF8 /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ReportViewController.swift; path = "Doctor Bot/View/ReportViewController.swift"; sourceTree = SOURCE_ROOT; };
+		5537D76425C50E6800E9EAF8 /* ReportTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportTableViewCell.swift; sourceTree = "<group>"; };
+		5537D76725C5102500E9EAF8 /* APIFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = APIFunctions.swift; path = "Doctor Bot/Controllers/Report/APIFunctions.swift"; sourceTree = SOURCE_ROOT; };
+		554264AE25C3C73D004E1C0E /* MedicineBotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MedicineBotViewController.swift; path = "Doctor Bot/Controllers/Medicine Bot/MedicineBotViewController.swift"; sourceTree = SOURCE_ROOT; };
+		554264B325C3EDB6004E1C0E /* MedicineBot.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MedicineBot.mlmodel; sourceTree = "<group>"; };
+		55452DFC25BD35C2006D04B6 /* PositiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PositiveViewController.swift; path = "Doctor Bot/Controllers/COVID/PositiveViewController.swift"; sourceTree = SOURCE_ROOT; };
+		55452E0025BD3609006D04B6 /* NegativeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NegativeViewController.swift; sourceTree = SOURCE_ROOT; };
+		55452E0425BD38B8006D04B6 /* benignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = benignViewController.swift; sourceTree = "<group>"; };
+		55452E0825BD38C2006D04B6 /* malignantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = malignantViewController.swift; sourceTree = "<group>"; };
+		55452E0B25BD4171006D04B6 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HistoryViewController.swift; path = "Doctor Bot/Controllers/Reports/HistoryViewController.swift"; sourceTree = SOURCE_ROOT; };
+		55452E1025BD43B5006D04B6 /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HistoryTableViewCell.swift; path = "Doctor Bot/Controllers/Reports/HistoryTableViewCell.swift"; sourceTree = SOURCE_ROOT; };
+		55484035263D3BD10066658E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		55484037263D3E0A0066658E /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignInViewController.swift; path = "Doctor Bot/Controllers/Firebase/SignInViewController.swift"; sourceTree = SOURCE_ROOT; };
+		55484039263D3E120066658E /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		555CE2E1263D5770004763E5 /* firebaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firebaseModel.swift; sourceTree = "<group>"; };
+		555CE2E3263D6BA9004763E5 /* firstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstViewController.swift; sourceTree = SOURCE_ROOT; };
+		5593396425BCAC1600443F6A /* skindisease.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = skindisease.mlmodel; sourceTree = "<group>"; };
+		5593396525BCAC1600443F6A /* Teath Disease 1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "Teath Disease 1.mlmodel"; sourceTree = "<group>"; };
+		5593396625BCAC1600443F6A /* NailDisease.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = NailDisease.mlmodel; sourceTree = "<group>"; };
+		5593396725BCAC1600443F6A /* skinCancer.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = skinCancer.mlmodel; sourceTree = "<group>"; };
+		559A5F6925BCC08D004A3CD0 /* COVIDDiagnoseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = COVIDDiagnoseVC.swift; path = "Doctor Bot/Controllers/COVID/COVIDDiagnoseVC.swift"; sourceTree = SOURCE_ROOT; };
+		559A5F6C25BCC0B0004A3CD0 /* NailDiagnoseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NailDiagnoseVC.swift; path = "Doctor Bot/Controllers/Nail Disease/NailDiagnoseVC.swift"; sourceTree = SOURCE_ROOT; };
+		559A5F6F25BCC36F004A3CD0 /* SkinCancerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SkinCancerVC.swift; path = "Doctor Bot/Controllers/Skin Cancer/SkinCancerVC.swift"; sourceTree = SOURCE_ROOT; };
+		55CC05EB25BC9EB200B66E0F /* Doctor Bot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Doctor Bot.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		55CC05EE25BC9EB200B66E0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		55CC05F025BC9EB200B66E0F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		55CC05F225BC9EB200B66E0F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		55CC05F525BC9EB200B66E0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		55CC05FA25BC9EB300B66E0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		55CC05FD25BC9EB300B66E0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		55CC05FF25BC9EB300B66E0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55CF81B425C531DA00EBF1E0 /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FormViewController.swift; path = "Doctor Bot/View/FormViewController.swift"; sourceTree = SOURCE_ROOT; };
+		60F052AEF4F7C40DF69E4582 /* Pods-Doctor Bot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Doctor Bot.debug.xcconfig"; path = "Target Support Files/Pods-Doctor Bot/Pods-Doctor Bot.debug.xcconfig"; sourceTree = "<group>"; };
+		8CBA5E23B26A275C42D2A0D3 /* Pods_Doctor_Bot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Doctor_Bot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB87BD11A735359A426DA0E0 /* Pods-Doctor Bot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Doctor Bot.release.xcconfig"; path = "Target Support Files/Pods-Doctor Bot/Pods-Doctor Bot.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		55CC05E825BC9EB200B66E0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10BFCFCA1AB0DEC894353924 /* Pods_Doctor_Bot.framework in Frameworks */,
+				5537D75625C509F200E9EAF8 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5518A9D525CE7EA000F305BC /* MediStore */ = {
+			isa = PBXGroup;
+			children = (
+				5518A9D225CE7E9B00F305BC /* MedistoreViewController.swift */,
+			);
+			path = MediStore;
+			sourceTree = "<group>";
+		};
+		5537D75A25C50C8C00E9EAF8 /* Reports */ = {
+			isa = PBXGroup;
+			children = (
+				55452E0B25BD4171006D04B6 /* HistoryViewController.swift */,
+				55452E1025BD43B5006D04B6 /* HistoryTableViewCell.swift */,
+			);
+			path = Reports;
+			sourceTree = "<group>";
+		};
+		554264B125C3C744004E1C0E /* Medicine Bot */ = {
+			isa = PBXGroup;
+			children = (
+				554264AE25C3C73D004E1C0E /* MedicineBotViewController.swift */,
+			);
+			path = "Medicine Bot";
+			sourceTree = "<group>";
+		};
+		55452DFF25BD35F1006D04B6 /* COVID */ = {
+			isa = PBXGroup;
+			children = (
+				55452E0025BD3609006D04B6 /* NegativeViewController.swift */,
+				55452DFC25BD35C2006D04B6 /* PositiveViewController.swift */,
+				559A5F6925BCC08D004A3CD0 /* COVIDDiagnoseVC.swift */,
+			);
+			path = COVID;
+			sourceTree = "<group>";
+		};
+		55452E0325BD3886006D04B6 /* Skin Cancer */ = {
+			isa = PBXGroup;
+			children = (
+				559A5F6F25BCC36F004A3CD0 /* SkinCancerVC.swift */,
+				55452E0825BD38C2006D04B6 /* malignantViewController.swift */,
+				55452E0425BD38B8006D04B6 /* benignViewController.swift */,
+			);
+			path = "Skin Cancer";
+			sourceTree = "<group>";
+		};
+		55452E0E25BD4179006D04B6 /* Nail Disease */ = {
+			isa = PBXGroup;
+			children = (
+				559A5F6C25BCC0B0004A3CD0 /* NailDiagnoseVC.swift */,
+			);
+			path = "Nail Disease";
+			sourceTree = "<group>";
+		};
+		55452E1325BD43BA006D04B6 /* Report */ = {
+			isa = PBXGroup;
+			children = (
+				55CF81B425C531DA00EBF1E0 /* FormViewController.swift */,
+				5537D76125C50E5800E9EAF8 /* ReportViewController.swift */,
+				5537D76425C50E6800E9EAF8 /* ReportTableViewCell.swift */,
+			);
+			path = Report;
+			sourceTree = "<group>";
+		};
+		5548403B263D3E190066658E /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				555CE2E3263D6BA9004763E5 /* firstViewController.swift */,
+				55484037263D3E0A0066658E /* SignInViewController.swift */,
+				55484039263D3E120066658E /* LogInViewController.swift */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		5593396D25BCAC1B00443F6A /* ML Model */ = {
+			isa = PBXGroup;
+			children = (
+				554264B325C3EDB6004E1C0E /* MedicineBot.mlmodel */,
+				5522F4A725BCBB8900CE7BA4 /* COVIDDetector.mlmodel */,
+				5593396625BCAC1600443F6A /* NailDisease.mlmodel */,
+				5593396425BCAC1600443F6A /* skindisease.mlmodel */,
+				5593396725BCAC1600443F6A /* skinCancer.mlmodel */,
+				5593396525BCAC1600443F6A /* Teath Disease 1.mlmodel */,
+			);
+			path = "ML Model";
+			sourceTree = "<group>";
+		};
+		5593397025BCAC3A00443F6A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5537D76725C5102500E9EAF8 /* APIFunctions.swift */,
+				555CE2E1263D5770004763E5 /* firebaseModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5593397125BCAC3F00443F6A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				55CC05FA25BC9EB300B66E0F /* Assets.xcassets */,
+				55CC05F425BC9EB200B66E0F /* Main.storyboard */,
+				55CC05FC25BC9EB300B66E0F /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5593397225BCAC4600443F6A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5548403B263D3E190066658E /* Firebase */,
+				5518A9D525CE7EA000F305BC /* MediStore */,
+				55100A9325CD20000043765D /* DoctorViewController.swift */,
+				55100A9A25CD21DA0043765D /* DoctorTableViewCell.swift */,
+				5537D75A25C50C8C00E9EAF8 /* Reports */,
+				554264B125C3C744004E1C0E /* Medicine Bot */,
+				55452E1325BD43BA006D04B6 /* Report */,
+				55452E0E25BD4179006D04B6 /* Nail Disease */,
+				55452E0325BD3886006D04B6 /* Skin Cancer */,
+				55452DFF25BD35F1006D04B6 /* COVID */,
+				5522F4A425BCB85700CE7BA4 /* DiagnoseViewController.swift */,
+				55CC05F225BC9EB200B66E0F /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		55CC05E225BC9EB200B66E0F = {
+			isa = PBXGroup;
+			children = (
+				55CC05ED25BC9EB200B66E0F /* Doctor Bot */,
+				55CC05EC25BC9EB200B66E0F /* Products */,
+				D201199CE3AD02A04628479C /* Pods */,
+				6C98AD3D8BDFED6185A40BEC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		55CC05EC25BC9EB200B66E0F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				55CC05EB25BC9EB200B66E0F /* Doctor Bot.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		55CC05ED25BC9EB200B66E0F /* Doctor Bot */ = {
+			isa = PBXGroup;
+			children = (
+				55CC05EE25BC9EB200B66E0F /* AppDelegate.swift */,
+				55CC05F025BC9EB200B66E0F /* SceneDelegate.swift */,
+				5593397025BCAC3A00443F6A /* Model */,
+				5593397225BCAC4600443F6A /* Controllers */,
+				5593397125BCAC3F00443F6A /* View */,
+				5593396D25BCAC1B00443F6A /* ML Model */,
+				55CC05FF25BC9EB300B66E0F /* Info.plist */,
+				55484035263D3BD10066658E /* GoogleService-Info.plist */,
+			);
+			path = "Doctor Bot";
+			sourceTree = "<group>";
+		};
+		6C98AD3D8BDFED6185A40BEC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8CBA5E23B26A275C42D2A0D3 /* Pods_Doctor_Bot.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D201199CE3AD02A04628479C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				60F052AEF4F7C40DF69E4582 /* Pods-Doctor Bot.debug.xcconfig */,
+				DB87BD11A735359A426DA0E0 /* Pods-Doctor Bot.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		55CC05EA25BC9EB200B66E0F /* Doctor Bot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55CC060225BC9EB300B66E0F /* Build configuration list for PBXNativeTarget "Doctor Bot" */;
+			buildPhases = (
+				606DC70FBF0471D6349451FA /* [CP] Check Pods Manifest.lock */,
+				55CC05E725BC9EB200B66E0F /* Sources */,
+				55CC05E825BC9EB200B66E0F /* Frameworks */,
+				55CC05E925BC9EB200B66E0F /* Resources */,
+				17191F421F50C0A1EBB2476C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Doctor Bot";
+			packageProductDependencies = (
+				5537D75525C509F200E9EAF8 /* Alamofire */,
+			);
+			productName = "Doctor Bot";
+			productReference = 55CC05EB25BC9EB200B66E0F /* Doctor Bot.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		55CC05E325BC9EB200B66E0F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					55CC05EA25BC9EB200B66E0F = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = 55CC05E625BC9EB200B66E0F /* Build configuration list for PBXProject "Doctor Bot" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 55CC05E225BC9EB200B66E0F;
+			packageReferences = (
+				5537D75425C509F200E9EAF8 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = 55CC05EC25BC9EB200B66E0F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				55CC05EA25BC9EB200B66E0F /* Doctor Bot */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		55CC05E925BC9EB200B66E0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55CC05FE25BC9EB300B66E0F /* LaunchScreen.storyboard in Resources */,
+				55CC05FB25BC9EB300B66E0F /* Assets.xcassets in Resources */,
+				55CC05F625BC9EB200B66E0F /* Main.storyboard in Resources */,
+				55484036263D3BD10066658E /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		17191F421F50C0A1EBB2476C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Doctor Bot/Pods-Doctor Bot-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Doctor Bot/Pods-Doctor Bot-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Doctor Bot/Pods-Doctor Bot-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		606DC70FBF0471D6349451FA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Doctor Bot-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		55CC05E725BC9EB200B66E0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55452DFD25BD35C2006D04B6 /* PositiveViewController.swift in Sources */,
+				55484038263D3E0A0066658E /* SignInViewController.swift in Sources */,
+				5522F4A525BCB85700CE7BA4 /* DiagnoseViewController.swift in Sources */,
+				5518A9D325CE7E9B00F305BC /* MedistoreViewController.swift in Sources */,
+				55452E0925BD38C2006D04B6 /* malignantViewController.swift in Sources */,
+				555CE2E4263D6BA9004763E5 /* firstViewController.swift in Sources */,
+				55CC05F325BC9EB200B66E0F /* ViewController.swift in Sources */,
+				55452E0125BD3609006D04B6 /* NegativeViewController.swift in Sources */,
+				559A5F6D25BCC0B0004A3CD0 /* NailDiagnoseVC.swift in Sources */,
+				55100A9425CD20000043765D /* DoctorViewController.swift in Sources */,
+				55CF81B525C531DA00EBF1E0 /* FormViewController.swift in Sources */,
+				5537D76825C5102500E9EAF8 /* APIFunctions.swift in Sources */,
+				554264B425C3EDB6004E1C0E /* MedicineBot.mlmodel in Sources */,
+				5593396A25BCAC1600443F6A /* NailDisease.mlmodel in Sources */,
+				55452E0C25BD4171006D04B6 /* HistoryViewController.swift in Sources */,
+				5537D76525C50E6800E9EAF8 /* ReportTableViewCell.swift in Sources */,
+				55452E0525BD38B8006D04B6 /* benignViewController.swift in Sources */,
+				55452E1125BD43B5006D04B6 /* HistoryTableViewCell.swift in Sources */,
+				554264AF25C3C73D004E1C0E /* MedicineBotViewController.swift in Sources */,
+				55CC05EF25BC9EB200B66E0F /* AppDelegate.swift in Sources */,
+				5593396B25BCAC1600443F6A /* skinCancer.mlmodel in Sources */,
+				555CE2E2263D5770004763E5 /* firebaseModel.swift in Sources */,
+				5548403A263D3E120066658E /* LogInViewController.swift in Sources */,
+				55CC05F125BC9EB200B66E0F /* SceneDelegate.swift in Sources */,
+				5593396925BCAC1600443F6A /* Teath Disease 1.mlmodel in Sources */,
+				5593396825BCAC1600443F6A /* skindisease.mlmodel in Sources */,
+				559A5F6A25BCC08D004A3CD0 /* COVIDDiagnoseVC.swift in Sources */,
+				5522F4A825BCBB8900CE7BA4 /* COVIDDetector.mlmodel in Sources */,
+				559A5F7025BCC36F004A3CD0 /* SkinCancerVC.swift in Sources */,
+				55100A9B25CD21DA0043765D /* DoctorTableViewCell.swift in Sources */,
+				5537D76225C50E5800E9EAF8 /* ReportViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		55CC05F425BC9EB200B66E0F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				55CC05F525BC9EB200B66E0F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		55CC05FC25BC9EB300B66E0F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				55CC05FD25BC9EB300B66E0F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		55CC060025BC9EB300B66E0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		55CC060125BC9EB300B66E0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		55CC060325BC9EB300B66E0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60F052AEF4F7C40DF69E4582 /* Pods-Doctor Bot.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GJM8829Q7N;
+				INFOPLIST_FILE = "Doctor Bot/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gokulnair.Doctor-Bot";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		55CC060425BC9EB300B66E0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB87BD11A735359A426DA0E0 /* Pods-Doctor Bot.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GJM8829Q7N;
+				INFOPLIST_FILE = "Doctor Bot/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gokulnair.Doctor-Bot";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		55CC05E625BC9EB200B66E0F /* Build configuration list for PBXProject "Doctor Bot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55CC060025BC9EB300B66E0F /* Debug */,
+				55CC060125BC9EB300B66E0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55CC060225BC9EB300B66E0F /* Build configuration list for PBXNativeTarget "Doctor Bot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55CC060325BC9EB300B66E0F /* Debug */,
+				55CC060425BC9EB300B66E0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5537D75425C509F200E9EAF8 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5537D75525C509F200E9EAF8 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5537D75425C509F200E9EAF8 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 55CC05E325BC9EB200B66E0F /* Project object */;
+}
