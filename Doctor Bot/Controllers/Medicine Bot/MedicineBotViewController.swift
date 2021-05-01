@@ -12,7 +12,6 @@ import Loafjet
 class MedicineBotViewController: UIViewController {
 
     @IBOutlet weak var view1: UIView!
-    @IBOutlet weak var view2: UIView!
     
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var backBtn: UIButton!
@@ -26,8 +25,7 @@ class MedicineBotViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view1.layer.cornerRadius = 30
-        view2.layer.cornerRadius = 30
+        view1.layer.cornerRadius = 20
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.6){
             Loaf.GradientLoaf(Message: "Medi-Bot", Position: .bottom, LoafWidth: 200, LoafHeight: 40, CornerRadius: 20, FontStyle: "Avenir-Medium", FontSize: 16, BGColor1: .systemGreen, BGColor2: .systemOrange, FontColor: .black, LoafImage: nil, AnimationDirection: .Bottom, Duration: 4, LoafjetView: self.view)
@@ -93,7 +91,7 @@ extension MedicineBotViewController: UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 90
+        return 40
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
