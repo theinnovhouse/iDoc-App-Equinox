@@ -59,7 +59,7 @@ This app have a great impact on our society:
 # Database 🎚
 * The whole app works on Firebase and custom database. 
 * For authentication we are using Firebase and to save user reports we have used our custom built backend.
-* The backend is made with MonoDB and Express and written on NodeJS.
+* The [backend](https://github.com/theinnovhouse/iDoc-Backend) is made with MonoDB and Express and written on NodeJS.
 
 # Whats Next for i-Doc ?
 * What we are planning is to take i-Doc to the next level by collaborating with Government bodies and including ervery citizens data into i-Doc, so thatevery i-Doc will have data of every citizen and this would help the nation to treat all their citizens in-personal.
