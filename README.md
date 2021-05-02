@@ -25,6 +25,16 @@ We thought to take it to another level by adding a Medi-Store. The Medi-Store is
 So our idea was to create an app which provides 100% guidance and suggestions to a patient regardless of going to the hospital, because during this pandemic going out is more riskier, so we created this app which would take care of your medical related problem by being at home.
 
 # How we built it 
+* So our app basically consists of 4 main parts
+1. Mobile Application 
+2. Web Application 
+3. Backend 
+4. ML Model
+
+* Our mobile application is built on Swift language which is compiled using Xcode
+* website---------------------------------
+* Our backend is made on Firebase and Nodejs. So we have used firebase for authentication and Custom backend for saving users data.
+* Our ML model is built using CoreML and Swift laguage .
 
 # Impact on Society 🌏
 This app have a great impact on our society:
@@ -39,7 +49,12 @@ This app have a great impact on our society:
 
 # Challenges we ran off
 
+* So inintially we needed to figure our how our ML model will work on any image with high accuracy as well as high precision. That took us quite a bit to figure out how we can achieve our desired result.
+* 
+* website---------------------------------
+
 # Final product
+
 
 # Database 🎚
 * The whole app works on Firebase and custom database. 
