@@ -62,6 +62,9 @@ This app have a great impact on our society:
 * The backend is made with MonoDB and Express and written on NodeJS.
 
 # Whats Next for i-Doc ?
+* What we are planning is to take i-Doc to the next level by collaborating with Government bodies and including ervery citizens data into i-Doc, so thatevery i-Doc will have data of every citizen and this would help the nation to treat all their citizens in-personal.
+* Other than that we are on a research of how to implement mental disease diagnosis on our app, since right now we ae only focusing on diseases which are visible on you body.
+* We are also planning to add fall detection and various other emergency service on our app.
 
 # How To Use 🛑 
 ### The app consists of four main sections:
