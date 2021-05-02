@@ -32,9 +32,9 @@ So our idea was to create an app which provides 100% guidance and suggestions to
 4. ML Model
 
 * Our mobile application is built on Swift language which is compiled using Xcode
-* website---------------------------------
+* Our website is built usin HTML5, CSS3, and JavaScript.
 * Our backend is made on Firebase and Nodejs. So we have used firebase for authentication and Custom backend for saving users data.
-* Our ML model is built using CoreML and Swift laguage .
+* Our ML model is built using CoreML and Swift laguage.
 
 # Impact on Society 🌏
 This app have a great impact on our society:
@@ -49,10 +49,9 @@ This app have a great impact on our society:
 
 # Challenges we faced
 
-* So inintially we needed to figure out how our ML model will work on any image with high accuracy as well as high precision. That took us quite a bit to figure out how we can achieve our desired result.
-* Secondly our ML model accepts image in a format called CVPixelBuffer so we were supposed to convert our jpeg mages to CVPixelBuffer and that was a challenging task for us.
+* So initially we needed to figure out how our ML model will work on any image with high accuracy as well as high precision. That took us quite a bit to figure out how we can achieve our desired result.
+* Secondly our ML model accepts image in a format called CVPixelBuffer so we were supposed to convert our jpeg images to CVPixelBuffer and that was a challenging task for us.
 * Then as we considered user privacy to be our foremost priority we were supposed to build a custom backend so that the users data always remains to him and its not shared to any third party server.
-* website---------------------------------
 
 # Final product
 
