@@ -49,8 +49,9 @@ This app have a great impact on our society:
 
 # Challenges we ran off
 
-* So initially we needed to figure our how our ML model will work on any image with high accuracy as well as high precision. That took us quite a bit to figure out how we can achieve our desired result.
-* 
+* So inintially we needed to figure out how our ML model will work on any image with high accuracy as well as high precision. That took us quite a bit to figure out how we can achieve our desired result.
+* Secondly our ML model accepts image in a format called CVPixelBuffer so we were supposed to convert our jpeg mages to CVPixelBuffer and that was a challenging task for us.
+* Then as we considered user privacy to be our foremost priority we were supposed to build a custom backend so that the users data always remains to him and its not shared to any third party server.
 * website---------------------------------
 
 # Final product
