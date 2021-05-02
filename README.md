@@ -54,7 +54,7 @@ This app have a great impact on our society:
 * Then as we considered user privacy to be our foremost priority we were supposed to build a custom backend so that the users data always remains to him and its not shared to any third party server.
 
 # Final product
-
+* Our app and website is fully capable of diagnosing diseases with a high accuracy rate, enable users to book appointments with doctors of their location, organize and access their test history and medical reports using Assistant, buy healthcare products using MediStore and get information like target treatment, side effects and dosage for medicine using MediBot.
 
 # Database 🎚
 * The whole app works on Firebase and custom database. 
