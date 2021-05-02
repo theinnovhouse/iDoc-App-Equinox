@@ -15,17 +15,17 @@
 ![badges](https://img.shields.io/badge/Custom-Backend-yellow)
 
 # Introduction ⚒  
-iDoc is a medical assistant app used to diagnose various diseases, suggest medical help, buy online medicines and to save your report history. This app works on various types of high level Machine Learning model. The Machine Learning model learns the input image and shows you result. The app consists of an medical bot which help you in identifying various medicines. The app helps to know the top doctors in your area and book an appointment with them. The report section which works on a custom database save your appointment reports with all the details. Even if you book a doctor other than from Doctor Bot then also you can add your report physically which will be encrypted and saved in the app. The app provides a Medi-Store from where you can order your medicines.
+iDoc is a medical assistant app used to diagnose various diseases, suggest medical help, buy online medicines and save your report history. This app works on various types of high level Machine Learning model. The Machine Learning model learns the input image and shows you result. The app consists of an medical bot which helps in identifying various medicines. The app helps to know the top doctors in your area and book an appointment with them. The report section which works on a custom database, saves your appointment reports with all the details. Even if you book a doctor other than from Doctor Bot then also you can add your report physically which will be encrypted and saved in the app. The app provides a MediStore from where you can order your medicines.
 
 # Inspiration ❤️
 The Idea behind construction of this app was to remove mental pressure of people when they get affected by diseases. During this pandemic when people are not able to visit hospitals frequently they can use this app to identify what diseases are they affected from. The app provides 89.93% accurate result. The app even provides medicinal suggestions according to the symptoms you have. During this high time when people fear to go hospitals, they can have the same guidance and suggestions being at home using Doctor Bot. 
 
 We thought to take it to another level by adding a Medi-Store. The Medi-Store is an online medical store from where you can order medicines. In the Medi-Store you don't need to add your prescription or order physically, the doctor who diagnosed you, will add the prescription by himself and the medicine will be delivered to your house. The bot remembers your medicine dosage cycle to expiration such that it would notify you when new medicines are to be ordered as well as the warning notification for expiration of medicine. 
 
-So our idea was to create an app which provides 100% guidance and suggestions to a patient regardless of going to the hospital, because during this pandemic going out is more riskier, so we created this app which would take care of your medical related problem by being at home.
+So our idea was to create an app which provides 100% guidance and suggestions to a patient regardless of going to the hospital, because during this pandemic going out is more riskier, so we created this app which would take care of your medical related problems by being at home.
 
 # How we built it 
-* So our app basically consists of 4 main parts
+* Our app basically consists of 4 main parts:
 1. Mobile Application 
 2. Web Application 
 3. Backend 
@@ -47,7 +47,7 @@ This app have a great impact on our society:
 * Record history of diagnostic checkups.
 * Record history of previous reports.
 
-# Challenges we ran off
+# Challenges we faced
 
 * So inintially we needed to figure out how our ML model will work on any image with high accuracy as well as high precision. That took us quite a bit to figure out how we can achieve our desired result.
 * Secondly our ML model accepts image in a format called CVPixelBuffer so we were supposed to convert our jpeg mages to CVPixelBuffer and that was a challenging task for us.
@@ -74,8 +74,8 @@ This app have a great impact on our society:
  d. Skin cancer  <br>
  e. Nail Disease  <br>
  
-2. Medi-Bot
-* Medi-Bot is a AI based assitant which would explain you why a particular medicine is given to you and what are its effect on your body. Even the Bot tells you the various kinds of alternate medicines you can get.
+2. MediBot
+* MediBot is a AI based assitant which would explain you why a particular medicine is given to you and what are its effect on your body. Even the Bot tells you the various kinds of alternate medicines you can get.
 
 3. Diagnostic History
 * The History section consists of your previous diagnosis details. Forgot about your last diagnosis , get to the history to know about it. We keep your records safe in our app.
@@ -85,8 +85,8 @@ This app have a great impact on our society:
 
 * Even your past appointmets with all its detail will be saved in the report section.
 
-5. Medi-Store
-* Medi-Store is a onine medical store powered by DoctorBot. Here you can purchase your medicines as well as various medical things. The AI bot saves your prescription provided by doctor and delivers it to your house. The AI bot remebers all your medicinal details. It save your dosage cycle to medicine expiration and when time arrives it notifies you with warning for medicine expiry and even when is its the time for your dosage.
+5. MediStore
+* MediStore is a onine medical store powered by DoctorBot. Here you can purchase your medicines as well as various medical things. The AI bot saves your prescription provided by doctor and delivers it to your house. The AI bot remebers all your medicinal details. It save your dosage cycle to medicine expiration and when time arrives it notifies you with warning for medicine expiry and even when is its the time for your dosage.
 
 * The AI Bot remebers when your medicine cycle completes and orders a new one for you.
 
