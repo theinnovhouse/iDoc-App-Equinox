@@ -1,5 +1,19 @@
 # iDoc-App-Equinox
 
+![Badge](https://img.shields.io/badge/License-MIT-yellow) 
+![Badge](https://img.shields.io/badge/Xcode-12.01-green)
+![badge](https://img.shields.io/badge/Swift-5.1-red)
+![Badge](https://img.shields.io/badge/Mongo-DB-yellowgreen)
+![Badge](https://img.shields.io/badge/Express-Backend-yellowgreen)
+![badge](https://img.shields.io/badge/iOS-14+-blue)
+![Badge](https://img.shields.io/badge/COVID-Detection-yellowgreen)
+![badge](https://img.shields.io/badge/SkinCancer-Detection-red)
+![Badge](https://img.shields.io/badge/NailDiseases-Detection-yellowGreen)
+![Badge](https://img.shields.io/badge/TeethDiseases-Detection-yellow) 
+![badge](https://img.shields.io/badge/Medicine-Bot-blue)
+![badge](https://img.shields.io/badge/Report-History-orange)
+![badges](https://img.shields.io/badge/Custom-Backend-yellow)
+
 # Introduction ⚒  
 iDoc is a medical assistant app used to diagnose various diseases, suggest medical help, buy online medicines and to save your report history. This app works on various types of high level Machine Learning model. The Machine Learning model learns the input image and shows you result. The app consists of an medical bot which help you in identifying various medicines. The app helps to know the top doctors in your area and book an appointment with them. The report section which works on a custom database save your appointment reports with all the details. Even if you book a doctor other than from Doctor Bot then also you can add your report physically which will be encrypted and saved in the app. The app provides a Medi-Store from where you can order your medicines.
 
