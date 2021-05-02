@@ -49,7 +49,7 @@ This app have a great impact on our society:
 
 # Challenges we ran off
 
-* So inintially we needed to figure our how our ML model will work on any image with high accuracy as well as high precision. That took us quite a bit to figure out how we can achieve our desired result.
+* So initially we needed to figure our how our ML model will work on any image with high accuracy as well as high precision. That took us quite a bit to figure out how we can achieve our desired result.
 * 
 * website---------------------------------
 
